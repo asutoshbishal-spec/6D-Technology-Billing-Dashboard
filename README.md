@@ -27,3 +27,7 @@ The server binds to `0.0.0.0` by default. To use a different port, set `PORT` be
 - `GET /api/invoices/export.csv?search=&status=` — export matching invoices
 
 Invoices are stored in `db.json`, so demo edits survive server restarts. Stop the server before manually editing this file. **This is mock data and a demo API only**: it has no authentication, payment processing, database hardening, or production safeguards. Do not expose it to the public internet or use it for real customer data.
+
+## Contributors
+
+- [asutoshbishal-spec](https://github.com/asutoshbishal-spec)
