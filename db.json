@@ -1,0 +1,225 @@
+{
+  "nextInvoiceNumber": 845,
+  "subscribers": 2845,
+  "invoices": [
+    {
+      "id": "INV-2026-0842",
+      "customer": "Sarah Chen",
+      "email": "sarah.chen@email.com",
+      "issueDate": "2026-10-20",
+      "dueDate": "2026-11-03",
+      "amount": 189,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0841",
+      "customer": "James Rodriguez",
+      "email": "j.rodriguez@acme.co",
+      "issueDate": "2026-10-19",
+      "dueDate": "2026-11-02",
+      "amount": 245.5,
+      "status": "pending"
+    },
+    {
+      "id": "INV-2026-0840",
+      "customer": "Metro Partners",
+      "email": "accounts@metropartners.com",
+      "issueDate": "2026-10-15",
+      "dueDate": "2026-10-22",
+      "amount": 1280,
+      "status": "overdue"
+    },
+    {
+      "id": "INV-2026-0839",
+      "customer": "Ava Thompson",
+      "email": "ava.t@email.com",
+      "issueDate": "2026-10-14",
+      "dueDate": "2026-10-28",
+      "amount": 98.75,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0838",
+      "customer": "Brightway Logistics",
+      "email": "billing@brightway.io",
+      "issueDate": "2026-10-12",
+      "dueDate": "2026-10-26",
+      "amount": 560,
+      "status": "pending"
+    },
+    {
+      "id": "INV-2026-0837",
+      "customer": "Northstar Wireless",
+      "email": "billing@northstar.net",
+      "issueDate": "2026-10-10",
+      "dueDate": "2026-10-24",
+      "amount": 18400,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0836",
+      "customer": "Evergreen Telecom",
+      "email": "accounts@evergreen.co",
+      "issueDate": "2026-10-08",
+      "dueDate": "2026-10-22",
+      "amount": 12450,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0835",
+      "customer": "Blue Peak Systems",
+      "email": "finance@bluepeak.io",
+      "issueDate": "2026-10-06",
+      "dueDate": "2026-10-20",
+      "amount": 12750,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0834",
+      "customer": "Summit Business Group",
+      "email": "billing@summit.example",
+      "issueDate": "2026-10-04",
+      "dueDate": "2026-10-18",
+      "amount": 15890,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0833",
+      "customer": "Cedar Networks",
+      "email": "ap@cedarnetworks.com",
+      "issueDate": "2026-10-02",
+      "dueDate": "2026-10-16",
+      "amount": 11900,
+      "status": "paid"
+    },
+    {
+      "id": "INV-2026-0832",
+      "customer": "Westline Communications",
+      "email": "finance@westline.com",
+      "issueDate": "2026-09-29",
+      "dueDate": "2026-10-13",
+      "amount": 12612.25,
+      "status": "pending"
+    },
+    {
+      "id": "INV-2026-0831",
+      "customer": "Pinecrest Services",
+      "email": "accounts@pinecrest.io",
+      "issueDate": "2026-09-27",
+      "dueDate": "2026-10-11",
+      "amount": 845,
+      "status": "overdue"
+    }
+  ],
+  "revenue": {
+    "yearly": {
+      "labels": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "current": [
+        48,
+        56,
+        51,
+        67,
+        61,
+        74,
+        68,
+        82,
+        76,
+        91,
+        85,
+        98
+      ],
+      "previous": [
+        42,
+        49,
+        45,
+        58,
+        53,
+        64,
+        59,
+        71,
+        66,
+        78,
+        73,
+        84
+      ]
+    },
+    "quarterly": {
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "current": [
+        155,
+        202,
+        226,
+        274
+      ],
+      "previous": [
+        136,
+        181,
+        198,
+        231
+      ]
+    },
+    "monthly": {
+      "labels": [
+        "Week 1",
+        "Week 2",
+        "Week 3",
+        "Week 4",
+        "Week 5"
+      ],
+      "current": [
+        46,
+        58,
+        50,
+        68,
+        61
+      ],
+      "previous": [
+        38,
+        49,
+        44,
+        56,
+        52
+      ]
+    }
+  },
+  "serviceRevenue": [
+    {
+      "name": "Mobile plans",
+      "amount": 42145,
+      "color": "#23b492"
+    },
+    {
+      "name": "Internet",
+      "amount": 25287,
+      "color": "#5d8ee2"
+    },
+    {
+      "name": "Business voice",
+      "amount": 10115,
+      "color": "#e9aa4b"
+    },
+    {
+      "name": "Other services",
+      "amount": 6743,
+      "color": "#a88be3"
+    }
+  ]
+}
