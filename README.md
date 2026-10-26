@@ -1,33 +1,38 @@
-# 6D Telecom billing demo
+# cmp-billing-and-invoice-mfe
 
-This is a self-contained billing UI connected to a local fake REST API. It uses Node.js built-ins only; no package installation or build step is needed.
+Billing operations dashboard built with React, Vite, Tailwind CSS, Recharts, and an Express mock API.
+
+## Requirements
+
+- Node.js 18 or later
+- npm
 
 ## Run locally
 
-1. Install Node.js 18 or later.
-2. Open a terminal in this folder and run:
+```powershell
+npm install
+npm run dev
+```
 
-   ```powershell
-   node server.js
-   ```
+Open <http://localhost:5173>. Vite serves the React app and proxies `/api` requests to the local API on port 3001. To use another API URL, copy `.env.example` to `.env` and set `VITE_API_BASE_URL`.
 
-3. Open <http://localhost:3000>.
+Create a production build with `npm run build`. Then `npm start` serves the built app and API on <http://localhost:3001>.
 
-The server binds to `0.0.0.0` by default. To use a different port, set `PORT` before starting it, for example `$env:PORT=8080; node server.js`. To access the demo from another device on the same network, open `http://<this-computer-LAN-IP>:3000` and allow Node.js through the host firewall if prompted.
+## Routes
 
-## Demo API
+- `/` — billing overview, trends, receivables aging, enterprise accounts, exceptions, and upcoming bill run
+- `/enterprises` — searchable enterprise account directory
+- `/invoices` — invoice register with search and status filters
+- `/enterprise/:id` — enterprise usage, account metadata, and billing snapshot
+- `/pre-bill-review` — pre-bill queue with reminder and exception-resolution actions
+- `/reports` — revenue, service mix, and receivables aging reports
 
-- `GET /api/health` — health check
-- `GET /api/dashboard?period=yearly|quarterly|monthly` — billing metrics, chart series, and service revenue
-- `GET /api/invoices?search=&status=all|paid|pending|overdue&page=1&pageSize=5` — filtered, paginated invoices
-- `GET /api/invoices/:id` — one invoice
-- `POST /api/invoices` — create an invoice
-- `PATCH /api/invoices/:id` — update its status
-- `DELETE /api/invoices/:id` — remove an invoice
-- `GET /api/invoices/export.csv?search=&status=` — export matching invoices
+## API
 
-Invoices are stored in `db.json`, so demo edits survive server restarts. Stop the server before manually editing this file. **This is mock data and a demo API only**: it has no authentication, payment processing, database hardening, or production safeguards. Do not expose it to the public internet or use it for real customer data.
+- `GET /api/health`
+- `GET /api/billing/overview`
+- `GET /api/billing/enterprise/:id`
+- `POST /api/billing/reminders/:id`
+- `POST /api/billing/exceptions/:id/resolve`
 
-## Contributors
-
-- [asutoshbishal-spec](https://github.com/asutoshbishal-spec)
+The dashboard falls back to local mock data when the API cannot be reached. In offline mode, reminder and resolution actions are simulated in the current browser session and are not sent to or persisted by the API. The included API is for demonstration only: it has no authentication, production database, or billing/payment processing and should not be exposed to the public internet or used with real customer data.

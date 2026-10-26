@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="holo-color" x1="8" y1="8" x2="69" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60a5fa"/>
+      <stop offset=".52" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="glass-fill" x1="20" y1="13" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a5f3fc" stop-opacity=".96"/>
+      <stop offset=".48" stop-color="#60a5fa" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="bulb-base" x1="27" y1="47" x2="45" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="bulb-glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 28 -27 0 36 35)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <ellipse cx="36" cy="39" fill="url(#bulb-glow)" rx="30" ry="30"/>
+    <path d="M36 12c-9.4 0-16.5 6.9-16.5 15.8 0 6.8 3.6 10.5 7.3 14.3 2.2 2.3 3.7 4.4 4.1 7.4h10.2c.4-3 1.9-5.1 4.1-7.4 3.7-3.8 7.3-7.5 7.3-14.3C52.5 18.9 45.4 12 36 12Z" fill="url(#glass-fill)" fill-opacity=".82" stroke="#d9fbff" stroke-opacity=".85" stroke-width="1.5"/>
+    <path d="M26 24c1.7-4.3 5.2-6.5 9-6.8" stroke="#fff" stroke-linecap="round" stroke-opacity=".78" stroke-width="2"/>
+    <path d="m30 32 6 6 6-6m-6-5v17" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".95" stroke-width="2"/>
+    <path d="M30.5 49.5h11v3.2h-11zm1.2 4.4h8.6v2.8h-8.6zm2 4h4.6v2.4h-4.6z" fill="url(#bulb-base)" stroke="#cffafe" stroke-opacity=".75" stroke-width=".8"/>
+    <path d="M32 54h8m-6 4h4" stroke="#fff" stroke-linecap="round" stroke-opacity=".72"/>
+    <path d="M36 5v3m-19 5 2.4 2.4m33.2-2.4-2.4 2.4M12 28h3m42 0h3" stroke="url(#holo-color)" stroke-linecap="round" stroke-width="1.7"/>
+    <ellipse cx="36" cy="68" rx="25" ry="6" fill="#22d3ee" fill-opacity=".1"/>
+    <ellipse cx="36" cy="67" rx="25" ry="5.5" stroke="url(#holo-color)" stroke-opacity=".82" stroke-width="1.5"/>
+    <ellipse cx="36" cy="67" rx="16.5" ry="3" stroke="#a5f3fc" stroke-opacity=".62"/>
+    <path d="M16 67h40" stroke="#fff" stroke-opacity=".28"/>
+    <circle cx="12" cy="63" r="1.2" fill="#67e8f9"/>
+    <circle cx="59" cy="62" r="1" fill="#a78bfa"/>
+  </g>
+  <text x="84" y="34" fill="#fff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="750" letter-spacing="-.8">6D Technology</text>
+  <text x="85" y="53" fill="#aaa4c1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.45">BILLING OPERATIONS</text>
+  <rect x="85" y="62" width="88" height="2.5" rx="1.25" fill="url(#holo-color)"/>
+</svg>

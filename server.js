@@ -132,7 +132,7 @@ async function handleApi(request, response, url) {
   const database = await readDatabase();
 
   if (route === "/api/health" && method === "GET") {
-    return sendJson(response, 200, { status: "ok", service: "6D Telecom demo API" });
+    return sendJson(response, 200, { status: "ok", service: "6D Technology demo API" });
   }
   if (route === "/api/dashboard" && method === "GET") {
     const dashboard = getDashboard(database);
@@ -258,7 +258,7 @@ const server = http.createServer(async (request, response) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`6D Telecom demo is running at http://localhost:${port}`);
+  console.log(`6D Technology demo is running at http://localhost:${port}`);
   console.log(`Database file: ${dataFile}`);
   if (host === "0.0.0.0") console.log("To allow access from your network, use this machine's LAN address and port.");
 });
